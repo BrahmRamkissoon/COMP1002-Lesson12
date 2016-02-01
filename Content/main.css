@@ -53,18 +53,15 @@ h6{
     background-color: black;
 }
 
-.nav{
-    display: flex;
-}
-
 .nav ul{
     list-style-type: none;
     display: flex;
-    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .nav li{
-    display: flex;
+    overflow: auto;
 }
 
 .nav li:hover{
