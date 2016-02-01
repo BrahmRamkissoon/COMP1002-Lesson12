@@ -51,16 +51,20 @@ h6{
 
 .masthead{
     background-color: black;
-    text-align: right;
+}
+
+.nav{
+    display: flex;
 }
 
 .nav ul{
     list-style-type: none;
+    display: flex;
+    align-content: flex-end;
 }
 
 .nav li{
-    display: inline-block;
-    overflow: auto;
+    display: flex;
 }
 
 .nav li:hover{
