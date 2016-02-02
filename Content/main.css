@@ -53,32 +53,73 @@ h6{
     background-color: black;
 }
 
+/* navigation styles for  small screens < 660px*/
 .nav ul{
-    list-style-type: none;
+    display: flex;
+    min-height: 3em;
+}
+
+.toggle{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+ }
+
+.toggle li{
+    display: flex;
+    min-height: 3em;
 }
 
-.nav li{
-    overflow: auto;
-}
-
-.nav li:hover{
-    background-color: grey;
-}
-
-.nav a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding-top: .8em;
+.toggle button{
+    margin-top: 0.5em;
+    margin-right: 0.5em; 
+    display: block;  
     width: 8em;
-    height: 2.2em;
-}
-
-.nav a:hover, nav a:visited, nav a:focus{
+    height: 3.5em;
+    border-radius: 10px;
     color: white;
 }
+
+
+
+.nav bar{
+    display: none;
+}
+
+/* navigation styles for  bigger screens > 660px*/
+@media screen and (min-width:660px){
+      .toggle{
+        display: none;
+    }  
+    
+    .nav-bar{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav li{
+        overflow: auto;
+    }
+
+    .nav li:hover{
+        background-color: grey;
+    }
+
+    .nav a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-top: .8em;
+        width: 8em;
+        height: 2.2em;
+    }
+
+    .nav a:hover, nav a:visited, nav a:focus{
+        color: white;
+    }   
+    
+} 
 
